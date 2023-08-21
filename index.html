@@ -7,19 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerardo Pérez</title>
 
+    <!--flavicon-->
+    <link rel="shortcut icon" href="img/boy_3667832-removebg-preview.png">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <a href="#inicio">
             <img src="img/logo-removebg-preview.png" alt="logo personal" class="logo">
-        </a>
-
+            
+        <button id="hamburguesa">
+            <i class="bi bi-list" id="open-menu"></i>
+            <i class="bi bi-x-circle" id="menu-cerrado"></i>
+        </button>
         <nav>
             <ul id="menu">
-                <li class="menu-nav"><a href="#inicio">Inicio <i class="bi bi-house-door-fill"></i></a></li>
+                <li class="menu-nav active"><a href="#inicio">Inicio <i class="bi bi-house-door-fill"></i></a></li>
                 <li class="menu-nav"><a href="#contacto">Contacto <i class="bi bi-person-lines-fill"></i></a></li>
             </ul>
         </nav>
@@ -83,6 +88,8 @@
                 class="bi bi-globe2"></i></a>
 
     </footer>
+    
+    <!--JavaScript-->
     <script src="JS/main.js"></script>
 </body>
 
