@@ -79,6 +79,8 @@ header {
     max-width: 300px; 
 }
 
+
+/*menu desplegable*/
 #hamburguesa{
     background: transparent;
     border: 0;
@@ -109,7 +111,7 @@ body.mobile-menu-active i#open-menu{
 }
 
 body.mobile-menu-active header{
-    height: 30vh;
+    height: 40vh;
     flex-wrap: wrap;
     align-items: flex-start;
     transition: height 0.3s;
@@ -137,13 +139,73 @@ li.menu-nav a {
 }
 
 li.menu-nav:hover, .active {
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.63);
     transition: background-color 0.4s;
 }
 
+/* boton modo oscuro*/
+#modo-oscuro{
+    display: block;
+    text-align: center;
+    margin: auto;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 26px;
+    width: 40px;
+    height: 40px;
+}
 
+#modo-oscuro:hover{
+    background-color: rgba(255, 166, 0, 0.63);
+}
+i#dia{
+    display: none;
+}
 
-    
+body.dark-mode i#dia{
+    display: block;
+}
+
+body.dark-mode i#noche{
+    display: none;
+}
+
+/*estilos del modo oscuro*/
+body.dark-mode {
+    background-color: #292828;
+    color: #fff;
+}
+
+body.dark-mode header {
+    background-color: #29200b;
+    color: #fbfbfb;
+}
+
+body.dark-mode #cv {
+    background-color: #29200b;
+    border-radius: 10px;
+}
+
+body.dark-mode #cv:hover{
+    background-color: rgb(21, 21, 39);
+}
+
+body.dark-mode footer{
+    background-color:#29200b;
+}
+
+body.dark-mode p{
+    color: #fbfbfb;
+}
+
+body.dark-mode header i{
+    color: #fbfbfb;
+}
+
+body.dark-mode .img_1 {
+    border-radius: 30px;
+}
 /*cuerpo*/
 
 main { 
@@ -155,7 +217,6 @@ main {
     margin-right: 10vw;
     max-width: 1000px;
 }
-
 
 
             /*primera sección*/
@@ -251,6 +312,9 @@ footer p {
     color: #fbfbfb;
 }
 
+
+/* media queries*/
+/*solo para pantallas grandes porque no me gusto como se veía en tablets*/
 @media (min-width: 1200px){
     #hamburguesa{
         display: none;
